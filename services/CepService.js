@@ -46,7 +46,7 @@ class CepService {
 
     async findAllCep() {
         var cepsResult = await CepRepository.findAllCep();
-        console.log(cepsResult)
+
         if (cepsResult[0] == undefined) {
             return "No cep registered.";
         } else {
